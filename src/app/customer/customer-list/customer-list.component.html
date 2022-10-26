@@ -1,0 +1,17 @@
+<h1>Danh sách khách hàng</h1>
+<table>
+  <tr>
+    <td>STT</td>
+    <td>Tên</td>
+    <td>Tuổi</td>
+    <td>Địa chỉ</td>
+  </tr>
+  <tr *ngFor="let product of customer; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.age}}</td>
+    <td>{{product.address}}</td>
+    <td><button (click)="deleteCustomer(i+1)">Delete</button></td>
+    <td><a (click)="findCustomerById(i+1)" routerLink="/customer/edit">Edit</a></td>
+  </tr>
+</table>

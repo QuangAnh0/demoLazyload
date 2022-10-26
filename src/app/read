@@ -1,0 +1,15 @@
+Lazy load
+
+-Lazy Loading được hiểu nôm na chính là việc load dữ liệu khi bạn cần sử dụng đến chúng.
+-Ví dụ như khi nhiều người cùng vào 1 page sẽ không kéo xuống hết đến cuối trang để đọc nội dung
+ thì điều bạn cần làm là load nội dung trước.
+-Khi đó người dùng kéo xuống đến đâu sẽ load dữ liệu đến đó
+-Google tiếp cận với Lazy loading theo hướng cụ thể là ở mục tìm kiếm hình ảnh. Google sẽ đưa ra danh sách 4-5 bức ảnh liên quan
+sau khi xem cụ thể một tấm hình nào đó và bên cạnh đó là nút “View More” để xem nhiều ảnh hơn.
+
+Preload
+
+-Khi ứng dụng được load, tất cả các components của các lazy module đều chưa được load,
+mà chúng chỉ thực sự được load khi mà người dùng sử dụng đến chúng.
+-Như vậy là chúng ta đã Lazy Load thành công thì cải thiện được đáng kể tốc độ load lần đầu của ứng dụng.
+-Khi đó người dùng sẽ phải đợi load dữ liệu => ảnh hưởng trải nghiệm người dùng => Preload để load ngầm những module đó

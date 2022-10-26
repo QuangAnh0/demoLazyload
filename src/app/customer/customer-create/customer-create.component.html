@@ -1,0 +1,25 @@
+<h1>Thêm khách hàng </h1>
+<form [formGroup]="customerForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td></td>
+      <td><input type="hidden" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Tên :</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Tuổi</td>
+      <td><input type="number" formControlName="age"></td>
+    </tr>
+    <tr>
+      <td>Địa chỉ</td>
+      <td><input type="text" formControlName="address"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Thêm</button></td>
+    </tr>
+  </table>
+</form>
